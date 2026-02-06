@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "Name": "Test Me",
+  "Author": "Crest",
+  "Description": "Barebones input tester for Stream Deck keys, dials, and touch strip.",
+  "Version": "0.1.0.0",
+  "UUID": "com.crest.testme",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "6.9"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20"
+  },
+  "Icon": "imgs/plugin/icon-diagnostic",
+  "Category": "Test Me",
+  "CategoryIcon": "imgs/plugin/category-diagnostic",
+  "CodePath": "bin/plugin.js",
+  "Actions": [
+    {
+      "UUID": "com.crest.testme.key",
+      "Name": "Input Tester",
+      "Icon": "imgs/actions/diagnostic-mono",
+      "UserTitleEnabled": false,
+      "Controllers": [
+        "Keypad",
+        "Encoder"
+      ],
+      "Encoder": {
+        "layout": "layouts/dial-layout.json",
+        "Icon": "imgs/actions/diagnostic-color",
+        "StackColor": "#00C2FF",
+        "TriggerDescription": {
+          "Rotate": "Turn",
+          "Push": "Press",
+          "Touch": "Tap"
+        }
+      },
+      "States": [
+        {
+          "Image": "imgs/actions/diagnostic-mono",
+          "Title": "TEST"
+        }
+      ]
+    }
+  ]
+}

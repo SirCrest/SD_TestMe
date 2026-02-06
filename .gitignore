@@ -1,0 +1,3 @@
+node_modules/
+*.streamDeckPlugin
+com.crest.testme.sdPlugin/bin/
