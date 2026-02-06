@@ -45,8 +45,8 @@ type DialState = {
 
 const log = streamDeck.logger.createScope("TestMe");
 const DIAL_LAYOUT = "layouts/dial-layout.json";
-const FONT = "Segoe UI, Arial, sans-serif";
-const MONO_FONT = "Consolas, Segoe UI Mono, monospace";
+const FONT = "Inter, -apple-system, Segoe UI, Arial, sans-serif";
+const MONO_FONT = "SF Mono, Menlo, Consolas, monospace";
 
 // ── Key dimensions ──
 const KEY_SIZE = 72;
