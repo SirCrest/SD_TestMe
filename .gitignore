@@ -1,3 +1,4 @@
 node_modules/
 *.streamDeckPlugin
 com.crest.testme.sdPlugin/bin/
+com.crest.testme.sdPlugin/logs/
