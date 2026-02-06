@@ -31,7 +31,6 @@ type DialState = {
   rotates: number;
   touches: number;
   netTicks: number;
-  lastTicks: number;
   dotX: number;
   dotY: number;
   hasDot: boolean;
@@ -281,7 +280,6 @@ class InputTesterAction extends SingletonAction {
       rotates: 0,
       touches: 0,
       netTicks: 0,
-      lastTicks: 0,
       dotX: 0,
       dotY: 0,
       hasDot: false,
@@ -493,7 +491,6 @@ class InputTesterAction extends SingletonAction {
     const state = this.getDialState(ev.action);
     state.rotates += Math.abs(ev.payload.ticks);
     state.netTicks += ev.payload.ticks;
-    state.lastTicks = ev.payload.ticks;
     state.lastRotateDirection = Math.sign(ev.payload.ticks);
     state.lastInputType = "rotate";
     log.info("dialRotate", { id: ev.action.id, ticks: ev.payload.ticks, pressed: ev.payload.pressed });

@@ -3,7 +3,7 @@
   "Name": "Test Me",
   "Author": "Crest",
   "Description": "Barebones input tester for Stream Deck keys, dials, and touch strip.",
-  "Version": "0.9.0.0",
+  "Version": "0.9.1.0",
   "UUID": "com.crest.testme",
   "SDKVersion": 2,
   "Software": {
